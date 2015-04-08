@@ -13,6 +13,7 @@ recipe 'newrelic_plugins::mysql', 'Installs New Relic MySQL Plugin'
 recipe 'newrelic_plugins::memcached_java', 'Installs New Relic Memcached Java Plugin'
 recipe 'newrelic_plugins::memcached_ruby', 'Installs New Relic Memcached Ruby Plugin'
 recipe 'newrelic_plugins::rackspace_load_balancers', 'Installs New Relic Rackspace Load Balancers Plugin'
+recipe 'newrelic_plugins::twilio', 'Installs New Relic Twilio Plugin'
 recipe 'newrelic_plugins::wikipedia_example_java', 'Installs New Relic Wikipedia Example Java Plugin'
 recipe 'newrelic_plugins::wikipedia_example_ruby', 'Installs New Relic Wikipedia Example Ruby Plugin'
 
@@ -33,6 +34,7 @@ attribute 'newrelic/license_key',
     'newrelic_plugins::memcached_java',
     'newrelic_plugins::memcached_ruby',
     'newrelic_plugins::rackspace_load_balancers',
+    'newrelic_plugins::twilio',
     'newrelic_plugins::wikipedia_example_java',
     'newrelic_plugins::wikipedia_example_ruby'
   ]
@@ -262,3 +264,32 @@ attribute 'newrelic/wikipedia_example_ruby/user',
   :type => 'string',
   :required => 'required',
   :recipes => ['newrelic_plugins::wikipedia_example_ruby']
+  
+attribute 'newrelic/twilio/install_path',
+  :display_name => 'New Relic Example Plugin Install Directory',
+  :description => 'Install Directory for New Relic Example Plugin',
+  :type => 'string',
+  :required => 'required',
+  :default => '/opt/newrelic',
+  :recipes => ['newrelic_plugins::twilio']
+
+attribute 'newrelic/twilio/user',
+  :display_name => 'New Relic Twilio Plugin User',
+  :description => 'User to run as for New Relic Twilio Plugin',
+  :type => 'string',
+  :required => 'required',
+  :recipes => ['newrelic_plugins::twilio']
+
+attribute 'newrelic/twilio/account_sid',
+  :display_name => 'Twilio account sid',
+  :description => 'Twilio account access sidd',
+  :type => 'string',
+  :required => 'required',
+  :recipes => ['newrelic_plugins::example']
+
+attribute 'newrelic/twilio/auth_token',
+  :display_name => 'Twilio auth token',
+  :description => 'Security token to connect to Twilio',
+  :type => 'string',
+  :required => 'required',
+  :recipes => ['newrelic_plugins::example']

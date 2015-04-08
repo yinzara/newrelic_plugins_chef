@@ -7,7 +7,7 @@ define :bundle_install do
   # bundle install
   execute 'bundle install' do
     cwd params[:path]
-    command "bundle install"
+    command "bundle install --deployment"
     user params[:user]
     only_if { File.directory?(params[:path]) }
   end

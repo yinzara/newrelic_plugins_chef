@@ -37,6 +37,7 @@
     "newrelic_plugins::memcached_java": "Installs New Relic Memcached Java Plugin",
     "newrelic_plugins::memcached_ruby": "Installs New Relic Memcached Ruby Plugin",
     "newrelic_plugins::rackspace_load_balancers": "Installs New Relic Rackspace Load Balancers Plugin",
+    "newrelic_plugins::twilio": "Installs New Relic Twilio Plugin",
     "newrelic_plugins::wikipedia_example_java": "Installs New Relic Wikipedia Example Java Plugin",
     "newrelic_plugins::wikipedia_example_ruby": "Installs New Relic Wikipedia Example Ruby Plugin"
   }

@@ -54,3 +54,13 @@ default[:newrelic][:wikipedia_example_ruby][:version] = "1.0.3"
 default[:newrelic][:wikipedia_example_ruby][:download_url] = "https://github.com/newrelic-platform/newrelic_wikipedia_plugin/archive/#{node[:newrelic][:wikipedia_example_ruby][:version]}.tar.gz"
 default[:newrelic][:wikipedia_example_ruby][:install_path] = "/opt/newrelic"
 default[:newrelic][:wikipedia_example_ruby][:plugin_path] = "#{node[:newrelic][:wikipedia_example_ruby][:install_path]}/newrelic_wikipedia_example_ruby_plugin"
+
+# twilio plugin attributes
+default[:newrelic][:twilio][:version] = "1.0.2"
+default[:newrelic][:twilio][:download_url] = "https://codeload.github.com/newrelic-platform/newrelic_twilio_plugin/tar.gz/#{node[:newrelic][:twilio][:version]}"
+default[:newrelic][:twilio][:install_path] = "/opt/newrelic"
+default[:newrelic][:twilio][:plugin_path] = "#{node[:newrelic][:twilio][:install_path]}/newrelic_twilio_plugin"
+default[:newrelic][:twilio][:user] = 'newrelic'
+#default[:newrelic][:twilio][:account_sid]
+#default[:newrelic][:twilio][:auth_token]
+

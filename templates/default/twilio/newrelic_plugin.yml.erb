@@ -6,7 +6,7 @@ newrelic:
   #
   # Update with your New Relic account license key:
   #
-  license_key: <%= node[:newrelic][:license_key] %>
+  license_key: '<%= node[:newrelic][:license_key] %>'
   #
   # Set to '1' for verbose output, remove for normal output.
   # All output goes to stdout/stderr.
@@ -28,5 +28,5 @@ agents:
     #
     # Update with your Twilio account sid and auth token:
     #
-    account_sid: <%= node[:newrelic][:twilio][:account_sid] %>
-    auth_token: <%=  node[:newrelic][:twilio][:auth_token] %>
+    account_sid: '<%= node[:newrelic][:twilio][:account_sid] %>'
+    auth_token: '<%=  node[:newrelic][:twilio][:auth_token] %>'
